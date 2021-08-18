@@ -2,15 +2,15 @@ mixin VideoSection
   +Section 
     .row
       .col-12
-        .card.bg-dark.text-white
+        .card.bg-dark.text-white.py-4.py-sm-0
           img.w-100(src=`${CWD}assets/img/gallery/video.png` alt='video')
           .card-img-overlay.bg-dark-gradient.d-flex.flex-column.flex-center
-            img(src=`${CWD}assets/img/icons/play.png` alt='play')
+            img(src=`${CWD}assets/img/icons/play.png` width='80' alt='play')
             h5.text-primary FASTEST DELIVERY
-            p.text-center  You can get your valuable item in the fastest period of
-              br
+            p.text-center You can get your valuable item in the fastest period of
+              br.d-none.d-sm-block
               |time with safety. Because your emergency
-              br
+              br.d-none.d-sm-block
               | is our first priority.
             a.stretched-link(href='#' data-bs-toggle='modal' data-bs-target='#exampleModal')
             .modal.fade#exampleModal(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')

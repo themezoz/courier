@@ -1,6 +1,6 @@
 mixin PriceItem(config, ...items)
   .col-md-4.pt-4.px-md-2.px-lg-3
-    .card.h-100.px-5.card-span&attributes(attributes)
+    .card.h-100.px-lg-5.card-span&attributes(attributes)
       .card-body.d-flex.flex-column.justify-content-around
         .text-center.pt-5
           img(src=`${CWD}assets/img/icons/${config.image}` alt='...' ).img-fluid 
@@ -22,7 +22,7 @@ mixin PriceItem(config, ...items)
              button.btn.btn-danger.hover-top.btn-glow.border-0(type='submit') Learn more
                   
 mixin Services
-  +Section('container-lg').py-7
+  +Section('container-xl').py-7
     .row.justify-content-center
       .col-md-8.col-lg-5.text-center.mb-3
         h5.text-danger SERVICES

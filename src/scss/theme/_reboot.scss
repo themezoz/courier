@@ -11,6 +11,10 @@ html {
   scroll-padding-top: $top-nav-height + 2;
 }
 
+main{
+  background-image: url('../img/gallery/bg.png');
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
