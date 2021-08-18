@@ -19,13 +19,13 @@ mixin NavbarCourier
           button.btn.bg-soft-warning#dropdownMenuButton1.ms-2(type='submit' data-bs-toggle='dropdown' aria-expanded='false')
             i.fas.fa-search.text-warning
           
-          ul.dropdown-menu.dropdown-menu-lg-end(aria-labelledby='dropdownMenuButton1' style="top:55px")
+          ul.dropdown-menu.dropdown-menu-lg-end.p-0.rounded(aria-labelledby='dropdownMenuButton1' style="top:55px")
             form
-              input.form-control(type='search' placeholder='Search' aria-label='Search') 
+              input.form-control.border-200(type='search' placeholder='Search' aria-label='Search' style="background:#FDF1DF;") 
 
-        a.btn.btn-primary.order-1.order-lg-0.ms-3( href="#!") Contact Us
+        a.btn.btn-primary.order-1.order-lg-0.ms-lg-3( href="#!") Contact Us
         form.d-flex.my-3.d-block.d-lg-none
-          input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+          input.form-control.me-2.border-200.bg-light(type='search' placeholder='Search' aria-label='Search')
           button.btn.btn-outline-primary(type='submit') Search
 
         
