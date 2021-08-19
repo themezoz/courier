@@ -11,15 +11,15 @@ mixin NavbarCourier
           li.nav-item.px-2
             a.nav-link(aria-current='page', href=`${CWD}index.html` class=currentPage === 'index' ? 'active' : false ) Home
           li.nav-item.px-2
-            a.nav-link(href='#!') Our Services
+            a.nav-link(href='#services') Our Services
           li.nav-item.px-2
-            a.nav-link(href='#!') About Us
+            a.nav-link(href='#findUs') Find Us
         
         .dropdown.d-none.d-lg-block
           button.btn.bg-soft-warning#dropdownMenuButton1.ms-2(type='submit' data-bs-toggle='dropdown' aria-expanded='false')
             i.fas.fa-search.text-warning
           
-          ul.dropdown-menu.dropdown-menu-lg-end.p-0.rounded(aria-labelledby='dropdownMenuButton1' style="top:55px")
+          .dropdown-menu.dropdown-menu-lg-end.p-0.rounded(aria-labelledby='dropdownMenuButton1' style="top:55px")
             form
               input.form-control.border-200(type='search' placeholder='Search' aria-label='Search' style="background:#FDF1DF;") 
 
