@@ -9,6 +9,22 @@ include mixins/home/landing/FindUs
 include mixins/home/landing/Cta
 include mixins/home/landing/Footer
 
+append variables
+ 
+  - var currentPage = 3;
+  -
+    var attrsBody = {
+        'data-bs-spy':"scroll",
+        'data-bs-target':"#navbar"
+    }
+
+
+
+append styles
+  link(href=`${CWD}vendors/swiper/swiper-bundle.min.css`,rel='stylesheet') 
+
+prepend scripts
+  script(src=`${CWD}vendors/swiper/swiper-bundle.min.js`) 
 
 
 prepend scripts
@@ -18,7 +34,7 @@ append content
   +Services
   +FactsCounter
   +VideoSection
-  +Testimonial
+  +Testimonial({id: 'pagination1'})
   +Callback
   +FindUs
   +Cta

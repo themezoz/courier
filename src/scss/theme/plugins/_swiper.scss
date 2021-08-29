@@ -1,0 +1,12 @@
+.swiper-pagination-bullet{
+    background: rgba($danger, 0.5) !important;
+
+}
+.swiper-pagination-bullet-active{
+    background: $primary !important;
+}
+.swiper-pagination{
+    margin-top: map-get($spacers, 5 );
+    position: unset !important;
+    text-align: center;
+}
