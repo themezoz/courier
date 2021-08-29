@@ -4,38 +4,39 @@ append variables
       var items = [
           {
             image: 'user-1.png',
-            name:'Yves Tanguy',
+            name:'John Adams',
+            designation:'Ceo',
             text:`I'm loving the look and the very useful included complete page templates. Such a time saver!I'm also glad to see Bootstrap v5 support coming. Highly recommended.`,
           },
           {
             image: 'user-2.png',
             name:'Yves Tanguy',
-            country:'Chief Executive, DLF',
-            text:'Review our community chat for the most frequently asked questions and document answers for our product docs.'
+            designation:'Chief Executive, DLF',
+            text:`This is my first bootstrap template and I've had quite a few questions, mostly driven by my own lack of experience. Nevertheless have received excellent support from the author, even to my noob question And my project is starting now to take shape nicely.`
           },
           {
             image: 'user-3.png',
-            name:'Yves Tanguy',
-            country:'Chief Executive, DLF',
-            text:'Create a series of video tutorials that cover everything from start to finish on using Open Enterprise.'
+            name:'Austin Min',
+            designation:'Designer',
+            text:`I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. `
           },
           {
             image: 'user-1.png',
             name:'Yves Tanguy',
-            country:'Chief Executive, DLF',
+            designation:'Ceo',
             text:'We’re looking for someone interested in business theory and research that’ll help us bridge the gap between our s...'
           },
           {
             image: 'user-2.png',
-            name:'Yves Tanguy',
-            country:'Chief Executive, DLF',
+            name:'John Adams',
+            designation:'Chief Executive, DLF',
             text:'Review our community chat for the most frequently asked questions and document answers for our product docs.'
           },
           {
             image: 'user-3.png',
-            name:'Yves Tanguy',
-            country:'Chief Executive, DLF',
-            text:'Create a series of video tutorials that cover everything from start to finish on using Open Enterprise.'
+            name:'Austin Min',
+            designation:'Designer',
+            text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. '
           },
       ]
 
@@ -56,7 +57,7 @@ mixin TestimonialItems(config)
           img(src=`${CWD}assets/img/icons/${config.image}` alt='...')
           .flex-1.ms-3
             h6.mb-0.fs--1.text-1000.fw-medium=config.name
-            p.fs--2.fw-normal.mb-0=config.country
+            p.fs--2.fw-normal.mb-0=config.designation
 
 mixin Testimonial({id})
   +Section('container-fluid').py-7
@@ -116,7 +117,7 @@ mixin Testimonial({id})
 //-             img(src=`${CWD}assets/img/icons/${config.image}` alt='').img-fluid
 //-             .flex-1.ms-3
 //-               h6.mb-0.fs--1.text-1000.fw-medium=config.name 
-//-               p.fs--2.fw-normal.mb-0=config.country
+//-               p.fs--2.fw-normal.mb-0=config.designation
          
 
 //- mixin Testimonial
@@ -131,36 +132,36 @@ mixin Testimonial({id})
 //-       .carousel-inner
 //-         .carousel-item.active(data-bs-interval='10000')
 //-           .row.h-100
-//-             +Items({image: 'user-1.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-1.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:`I'm loving the look and the very useful included complete page templates. Such a time saver!I'm also glad to see Bootstrap v5 support coming. Highly recommended`,
 //-             })
-//-             +Items({image: 'user-2.png', name:'Kim Young Jou',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-2.png', name:'Kim Young Jou',designation:'Chief Executive, DLF',
 //-               text:`This is my first bootstrap template and I've had quite a few questions, mostly driven by my own lack of experience. Nevertheless have received excellent support from the author, even to my noob question And my project is starting now to take shape nicely.`,
 //-             })
-//-             +Items({image: 'user-3.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-3.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:`I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .`,
 //-             })
 //-         .carousel-item(data-bs-interval='2000')
 //-           .row.h-100
-//-             +Items({image: 'user-1.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-1.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. ',
 //-             })
-//-             +Items({image: 'user-2.png', name:'Kim Young Jou',country:'Chief Executive, DLF', 
+//-             +Items({image: 'user-2.png', name:'Kim Young Jou',designation:'Chief Executive, DLF', 
 //-               text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. ',
 //-             })
-//-             +Items({image: 'user-3.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-3.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .',
 //-             })
 
 //-         .carousel-item
 //-           .row.h-100
-//-             +Items({image: 'user-1.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-1.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. ',
 //-             })
-//-             +Items({image: 'user-2.png', name:'Kim Young Jou',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-2.png', name:'Kim Young Jou',designation:'Chief Executive, DLF',
 //-               text:'“I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. ',
 //-             })
-//-             +Items({image: 'user-3.png', name:'Yves Tanguy',country:'Chief Executive, DLF',
+//-             +Items({image: 'user-3.png', name:'Yves Tanguy',designation:'Chief Executive, DLF',
 //-               text:'I purchased a phone from an e-commerce site, and this courier service provider assisted me in getting it delivered to my home. I received my phone within one day, and I was really satisfied with their service when I received it. .',
 //-             })
 
