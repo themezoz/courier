@@ -17660,25 +17660,21 @@ ul {
   background: linear-gradient(-90deg, #FFF4E2 54.45%, rgba(255, 255, 255, 0.206) 100%);
   content: "";
   height: 100%;
-  width: 500px;
-  margin-left: 1550px;
   z-index: 2;
+  margin-left: 1550px;
+  width: 600px;
 }
 
-.bg-offcanvas-left {
-  position: relative;
-}
-
-.bg-offcanvas-right::before {
+.bg-offcanvas::after {
   position: absolute;
   background: -webkit-gradient(linear, left top, right top, color-stop(54.45%, #FFF4E2), to(rgba(255, 255, 255, 0.206)));
   background: -o-linear-gradient(left, #FFF4E2 54.45%, rgba(255, 255, 255, 0.206) 100%);
   background: linear-gradient(-270deg, #FFF4E2 54.45%, rgba(255, 255, 255, 0.206) 100%);
   content: "";
   height: 100%;
-  width: 400px;
-  margin-right: 1550px;
   z-index: 2;
+  margin-right: 1550px;
+  width: 600px;
 }
 
 /* -------------------------------------------------------------------------- */
